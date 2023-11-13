@@ -1,5 +1,7 @@
 # Page-rank
 
+## Background
+
 A personalized page rank is performed on a graph of the Gnutella server network. In this graph, each node represents a server, and each (directed) edge represents a connection between servers in Gnutella's peer-to-peer network. The graph is represented as a adjecent list. Each server (node) is identified by a unique number, and each line in the file gives the adjacency list for a single server. For example, this line:
 
 ```
@@ -17,6 +19,8 @@ Personalized page rank is like [ordinary page rank](https://lintool.github.io/Ma
 * Personalized page rank is initialized by assigning all probability mass to the source node, and none to the other nodes. In contrast, ordinary page rank is initialized by giving all nodes the same probability mass.
 * Whenever personalized page rank makes a random jump, it jumps back to the source node. In contrast, ordinary page rank may jump to any node.
 * In personalized page rank, all probability mass lost dangling nodes is put back into the source nodes. In ordinary page rank, lost mass is distributed evenly over all nodes.
+
+## Tasks
 
 The project contains 3 tasks:
 1. Basic properties of the Gnutella graph, which includes:
